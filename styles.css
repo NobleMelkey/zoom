@@ -1,0 +1,112 @@
+/* Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+    background: linear-gradient(135deg, #159cf6 0%, #ACB6E5 100%);
+    overflow: hidden;
+}
+
+#chart {
+    width: 90vw;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.9); /* Increase opacity for better readability */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    border-radius: 15px; /* Consistent border radius */
+    padding: 2vw;
+    backdrop-filter: blur(15px); /* More prominent blur */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem; /* Slightly increased spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+.node circle {
+    fill: #E71010;
+    stroke: #fff;
+    stroke-width: 0.25rem;
+    transition: fill 0.3s ease, stroke-width 0.3s ease, transform 0.3s ease; /* Added transform for subtle zoom effect */
+}
+
+.node circle:hover {
+    fill: #FF3333; /* Brighter red */
+    stroke-width: 0.35rem;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.node text {
+    font: bold italic 1rem 'Poppins', sans-serif; /* Bold and italic font style */
+    fill: #121111; /* White text color for better contrast */
+    background-color: #fff4f4; /* Background color (a soft red) */
+    padding: 0.3rem 0.6rem; /* Padding around the text */
+    border-radius: 0.3rem; /* Rounded corners */
+    text-shadow: none; /* Remove text shadow for cleaner look */
+    text-anchor: middle; /* Horizontally center text */
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow around the text box */
+}
+
+.link {
+    fill: none;
+    stroke: #ae5050;
+    stroke-width: 0.2rem;
+    stroke-dasharray: 4, 4; /* Shorter dash for a cleaner look */
+    transition: stroke 0.3s ease, stroke-dasharray 0.3s ease;
+}
+
+.link:hover {
+    stroke: #555;
+    stroke-dasharray: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #chart {
+        width: 95vw;
+        height: 95vh;
+        padding: 1.5vw;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .node text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #chart {
+        width: 100vw;
+        height: 100vh;
+        padding: 1vw;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .node text {
+        font-size: 0.8rem;
+    }
+}

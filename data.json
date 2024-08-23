@@ -1,0 +1,49 @@
+{
+    "name": "IT. Course",
+    "children": [
+        {
+            "name": "Web Development",
+            "children": [
+                {
+                    "name": "Mern Stack Development",
+                    "children": [
+                        {
+                            "name": "Technology",
+                            "children": [
+                                {
+                                    "name": "FrontEnd",
+                                    "children": [
+                                        { "name": "HTML", "role": "HTML Trainer" },
+                                        { "name": "CSS", "role": "Data Analyst Trainer" },
+                                        { "name": "JS", "role": "System Administrator Trainer" },
+                                        { "name": "React.js", "role": "Web Developer Trainer" },
+                                        { "name": "Angular.js", "role": "Network Engineer Trainer" }
+                                    ]
+                                },
+                                {
+                                    "name": "BackEnd",
+                                    "children": [
+                                        { "name": "Node.js", "role": "HTML Trainer" },
+                                        { "name": "PHP", "role": "Data Analyst Trainer" },
+                                        { "name": "Next.js", "role": "System Administrator Trainer" },
+                                        { "name": "Django", "role": "Web Developer Trainer" },
+                                        { "name": "Spring Boot", "role": "Network Engineer Trainer" }
+                                    ]
+                                },
+                                {
+                                    "name": "Server",
+                                    "children": [
+                                        { "name": "MySQL", "role": "UI Designer" },
+                                        { "name": "PostgreSQL", "role": "Business Analyst" },
+                                        { "name": "Microsoft SQL Server", "role": "Project Manager" },
+                                        { "name": "Oracle Database", "role": "Technical Writer" }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
